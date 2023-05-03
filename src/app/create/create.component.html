@@ -1,0 +1,64 @@
+<form class="form-container" (ngSubmit)="(submit)">
+  <div class="form-table">
+    <div>
+      <label>Company Name:</label>
+      <input
+        type="text"
+        name="company-name"
+        [(ngModel)]="formData.companyName"
+      />
+    </div>
+    <div>
+      <label>Contact Number:</label>
+      <input
+        type="number"
+        name="contact-number"
+        [(ngModel)]="formData.contactNumber"
+      />
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email" [(ngModel)]="formData.email" />
+    </div>
+    <div>
+      <label>GST Number:</label>
+      <input type="text" name="gst-number" [(ngModel)]="formData.gstNumber" />
+    </div>
+
+    <div>
+      <label>Address:</label>
+      <input type="text" name="address" [(ngModel)]="formData.gstNumber" />
+    </div>
+
+    <div>
+      <label>city:</label>
+      <input type="text" name="city" [(ngModel)]="formData.gstNumber" />
+    </div>
+
+    <div>
+      <label>State:</label>
+      <input type="text" name="string" [(ngModel)]="formData.gstNumber" />
+    </div>
+
+    <div>
+      <label>Pin code:</label>
+      <input type="text" name="gst-number" [(ngModel)]="formData.gstNumber" />
+    </div>
+  </div>
+  <!-- More fixed fields can be added here -->
+  <!-- <div class="form-table-address">
+    <div *ngFor="let field of dynamicFields">
+      <label>{{ field.label }}:</label>
+      <input
+        type="{{ field.type }}"
+        name="{{ field.name }}"
+        [(ngModel)]="formData.gstNumber"
+      />
+    </div>
+    <div class="addMore-btn">
+      <button (click)="addDynamicField()">Add Field</button>
+    </div>
+  </div> -->
+
+  <button type="submit" (click)="submit()">Submit</button>
+</form>
